@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <style>
+
+    </style>
+
+
+    <article class="container">
+        <header>
+            <h1>Trouver votre GeoCode</h1>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row find_code m-auto">
+                    <div class="col-12 col-md-7 form-group row d-inline m-auto">
+                        <label class="col-4" for="address">Addresse</label>
+                        <input type="text" id="address" class="form-control col-7 d-inline"
+                               placeholder="Saisir votre addresse">
+                    </div>
+                    <div class="col-7 col-md-2 m-auto">
+                        <button class="col-9 btn-primary" id="find-geo"><span class="fa fa-search">&nbsp;&nbsp;Go</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+{% endblock %}
