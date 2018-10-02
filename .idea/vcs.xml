@@ -2,5 +2,37 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/torann-override/json-ld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/doctrine/instantiator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/hamcrest/hamcrest-php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/mockery/mockery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/myclabs/deep-copy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpdocumentor/reflection-common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpdocumentor/reflection-docblock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpdocumentor/type-resolver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpspec/prophecy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpunit/php-code-coverage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpunit/php-file-iterator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpunit/php-text-template" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpunit/php-timer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpunit/php-token-stream" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpunit/phpunit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/phpunit/phpunit-mock-objects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/code-unit-reverse-lookup" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/comparator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/diff" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/environment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/exporter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/global-state" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/object-enumerator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/recursion-context" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/resource-operations" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/sebastian/version" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/symfony/polyfill-ctype" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/symfony/yaml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor_override/torann-override/json-ld/vendor/webmozart/assert" vcs="Git" />
   </component>
 </project>

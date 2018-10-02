@@ -7,9 +7,7 @@ Encore
 
     .addEntry('js/app', './assets/js/app.js')
 
-    .addStyleEntry('css/main', './assets/css/main.scss')
-
-    .addStyleEntry('css/bootstrap', './assets/css/bootstrap.css')
+    .addStyleEntry('css/main', './assets/scss/main.scss')
 
     .cleanupOutputBeforeBuild()
 

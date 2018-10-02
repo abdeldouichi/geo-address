@@ -1,0 +1,55 @@
+<script type="application/ld+json">
+     {
+     "@context": "http://www.schema.org",
+     "@type": "Article",
+     "author": {
+        "@type": "Organization",
+        "name": "HelloArtisan"
+        }, "mainEntityOfPage":
+        {
+            "@type": "WebPage",
+            {# url #}
+            "@id": "{{ url }}"
+            },
+            {# title #}
+        "headline":"{{ title }}",
+        "name":"{{ title }}",
+        "datePublished": {{ created_At }}",
+        "dateModified": "{{ modified_At }}",
+        "image": ["{{ image_article }} "],
+        "description": "{{ description }}"
+         {%   if( hasRating ) %} ,
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "{{ avgRate }}", "bestRating": "{{ maxRate }}", "ratingCount": "{{  countRate }}"
+            {%  if(hasComments) %}
+             ,"reviewCount": "{{ countComments }}"
+            {%  endif %}
+         }
+        {% if(hasComments) %} ,
+        "review": [
+        {% set counter = comments|lenght %}
+        {% for comment in comments %}
+            {
+                "@type": "Review",
+                "author": "{{ comment.name }}",
+                "datePublished": "{{ comment.createdAt }}",
+                "description": "{{ comment.content }}",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "bestRating": "{{ maxRate }}",
+                    "ratingValue": "{{ comment.rate }}",
+                    "worstRating": "{{ minRate }}"
+                }
+            }
+
+
+        {%  endfor %}]
+    <?php if ($i > 0): ?> , <?php endif;
+            $i++; ?> { "@type": "Review", "author": "<?= $avis->NAME ? $avis->NAME : "anonyme" ?>", "datePublished": "<?= $avis->DATE_CREATED ?>", "description": "<?= $avis->AVIS ?>", "reviewRating": { "@type": "Rating", "bestRating": "5", "ratingValue": "<?= $avis->NOTE ? $avis->NOTE : 5 ?>", "worstRating": "1" } } <?php endforeach; ?> ] <?php endif; ?><?php endif; ?>
+     , "inLanguage": "fr", "articleSection":"<?= $this->CATEGORY ?>
+     Travaux Service Artisan" , "publisher": { "@type": "Organization", "name": "HelloArtisan","logo": { "@type": "ImageObject", "url": "https://www.helloartisan.com/public/images/frontend/home-logo.png" } }, "keywords": "Rénovation, Maison, Rénovation, Appartement, Estimez, travaux, Obtenez, devis, Rénovation Maison,Rénovation Appartement,Estimez vos travaux,Obtenez des devis,<?= ($this->KEYWORDS) ? $this->KEYWORDS . "," : "" ?><?= str_replace(' ', ',', trim($this->CATEGORY)) ?>
+     ,<?= str_replace(' ', ',', trim($this->TITLE)) ?>
+     ,<?= str_replace(' ', ',', str_replace(',', '', trim($this->DESCRIPTION))) ?> "}
+
+</script>

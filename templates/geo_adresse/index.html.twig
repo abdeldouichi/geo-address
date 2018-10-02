@@ -1,12 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
+{% block title %} {{ controller_name }}!{% endblock %}
+
+{% block metapage %}
+
+    <meta name="description" content="{{ page_param.description }}" />
+    {% if(page_param.twitterAcount != '')  %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@HelloArtisan" />
+    <meta name="twitter:title" content="{{ page_param.title }}" />
+    <meta name="twitter:description" content="{{ page_param.description }}" />
+    <meta name="twitter:image" content="{{ asset('/images/articles' ~  page_param.imagePage) }}" />
+    {%  endif %}
+    <meta property="og:site_name" content="HelloArtisan" />
+    <meta property="og:title" content="{{ page_param.title }}" />
+    <meta property="og:description" content="{{ page_param.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url('' ~ page_param.uri)  }}" />
+    <meta property="og:image" content="{{ asset('/images/articles' ~  page_param.imagePage) }}" />
+    {%  if( page_param.isCanonical ) %}
+        <link rel="canonical" href="{{ url('' ~ page_param.uri) }}">
+    {% endif %}
+    {%  if( page_param.isAmp ) %}
+        <link rel="amphtml" href={{ url('' ~ page_param.uri)  ~"/amp" }}>
+    {% endif %}
+
+    {%  if(page_param.isNoindex) %}
+        <meta name="robots" content="noindex">
+    {%  endif %}
+
+{% endblock %}
+
 
 {% block body %}
-    <style>
-
-    </style>
-
 
     <article class="container">
         <header>

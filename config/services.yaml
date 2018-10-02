@@ -7,6 +7,11 @@ parameters:
     locale: 'en'
 
 services:
+
+    # inject dependecy of Helper layer
+    helper.page_meta_param:
+        class: App\Helper\PageMetaParam
+
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.

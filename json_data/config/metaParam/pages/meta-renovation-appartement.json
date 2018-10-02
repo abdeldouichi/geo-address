@@ -1,0 +1,43 @@
+<script type="application/ld+json">{
+  "@context": "http:\/\/schema.org",
+  "@type": "Article",
+  "name": "Rénovation Appartement ",
+  "url": "https:\/\/www.helloartisan.com\/articles\/renovation-appartement",
+  "description": "Nous vous accompagnons pour vos travaux de rénovation d'appartement, de la présentation d'entreprises vérifiées jusqu'à la finalisation de vos projets ",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https:\/\/www.helloartisan.com\/resource\/media\/categorie\/renover-appartement-miniature.jpg "
+  },
+  "review": {
+    "@type": "Review"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HelloArtisan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https =>\/\/www.helloartisan.com\/public\/images\/frontend\/home-logo.png"
+    }
+  },
+  "keywords": "Rénovation, Maison, Rénovation, Appartement, Estimez, travaux, Obtenez, devis, Rénovation Maison,Rénovation Appartement,Estimez vos travaux,Obtenez des devis,rénovation, appartement, budget, travaux, devis, prix, pose, aménagement, Rénovation Standard, Rénovation Complète, m2, prix m2, rénovation appartement,Rénovation,Appartement ,Rénovation,Appartement ,Nous,vous,accompagnons,pour,vos,travaux,de,rénovation,d'appartement,de,la,présentation,d'entreprises,vérifiées,jusqu'à,la,finalisation,de,vos,projets",
+  "inLanguage": "fr",
+  "dateCreated": "2017-06-14 13:47:31 ",
+  "dateModified": "2018-06-27 17:08:48 ",
+  "datePublished": "2017-06-16 13:47:31 ",
+  "author": {
+    "@type": "Person",
+    "name": "HelloArtisan"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "reviewCount": "14",
+    "ratingValue": "4.32",
+    "bestRating": "5",
+    "ratingCount": "93"
+  },
+  "articleSection": "Rénovation Appartement Travaux Service Artisan",
+  "mainEntityOfPage": {
+    "@type": "WebPage"
+  },
+  "headline": "Rénovation Appartement"
+}</script>

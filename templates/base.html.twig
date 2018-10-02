@@ -2,14 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width, viewport-fit=cover">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="icon" href="{{asset('/icones/favicon.ico')}}" type="image/x-icon" />
+
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="publisher" href="https://plus.google.com/+Helloartisans" />
+
+        {% block metapage %}
+
+        {% endblock %}
+
+
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{{asset('/build/css/bootstrap.css')}}">
         <link rel="stylesheet" href="{{asset('/build/css/main.css')}}">
         <script src="{{  asset('/build/js/app.js') }}"></script>
-
-
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
@@ -17,4 +24,6 @@
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
+
+
 </html>
